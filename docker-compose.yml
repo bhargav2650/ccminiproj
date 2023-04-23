@@ -16,19 +16,19 @@ services:
 
   consumer_two:
       # network_mode: rabbitmq_network
-      image: consumer2
+      build: ./consumer2
       networks:
       - rabbitmq_network
       - microservices_network
   consumer_three:
       # network_mode: rabbitmq_network
-      image: consumer3
+      build: ./consumer2
       networks:
       - rabbitmq_network
       - microservices_network
   consumer_four:
       # network_mode: rabbitmq_network
-      image: consumer4
+      build: ./consumer2
       networks:
       - rabbitmq_network
       - microservices_network
